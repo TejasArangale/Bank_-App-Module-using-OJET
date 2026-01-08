@@ -1,0 +1,46 @@
+<div class="oj-hybrid-padding">
+  <h1>Account Managment Area</h1>
+
+  <div id="accordionPage">
+    <oj-accordion id="a1">
+      
+      <oj-collapsible id="c1">
+        <h3 slot="header">
+          <span class="oj-ux-ico-cart oj-ux-icon-size-5x oj-sm-padding-2x-end"></span>
+          Account types
+        </h3>
+        <p>Current Account</p>
+        <p>Saving Account.</p>
+        <p>Loan Account</p>
+        <p>Corporate Account</p>
+      </oj-collapsible>
+
+      <oj-collapsible id="c3" expanded>
+        <h3 slot="header">Paymant Method</h3>
+        <div>
+          <oj-label id="mainlabelid">Options</oj-label>
+          <oj-radioset id="radiosetBasicDemoId" value="red" labelled-by="mainlabelid">
+            <oj-option id="blueopt" value="blue">Debit Card</oj-option>
+            <oj-option id="greenopt" value="green">Credit Card</oj-option>
+            <oj-option id="redopt" value="red">Net Banking</oj-option>
+           <oj-option id="orangeopt" value="orange">Bank Transfer</oj-option>
+          </oj-radioset>
+        </div>
+      </oj-collapsible>
+
+      <oj-collapsible id="c4">
+        <h3 slot="header">Account Details</h3>
+          <p><b>Account Holder:</b> John Doe</p>
+          <p><b>Account Number:</b> 204589764321</p>
+          <p><b>Account Type:</b> Savings Account</p>
+          <p><b>Branch:</b> Mumbai Central Branch</p>
+          <p><b>IFSC Code:</b> HDFC0001234</p>
+          <p><b>Email:</b> john.doe@example.com</p>
+           <p><b>Phone:</b> +91 98765 43210</p>
+           <p><b>Status:</b> Active</p>
+      </oj-collapsible>
+
+    </oj-accordion>
+  </div>
+
+</div>

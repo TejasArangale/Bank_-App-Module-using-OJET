@@ -1,0 +1,35 @@
+<div class="oj-sm-padding-4x">
+  <h1 class="oj-typography-heading-xl">User Preferences</h1>
+
+  <p class="oj-typography-body-md oj-sm-margin-2x-bottom">
+    Manage your personal preferences for notifications, theme, and account settings.
+  </p>
+
+  <oj-form-layout max-columns="2" direction="row">
+
+    <oj-switch id="notifSwitch" label-hint="Email Notifications"></oj-switch>
+
+    <oj-select-single
+      label-hint="Theme"
+      value="light"
+      style="max-width:300px;">
+      <oj-option value="light">Light Mode</oj-option>
+      <oj-option value="dark">Dark Mode</oj-option>
+      <oj-option value="auto">Auto</oj-option>
+    </oj-select-single>
+
+    <oj-input-text
+      label-hint="Display Name"
+      value="John Hancock">
+    </oj-input-text>
+
+    <oj-input-password
+      label-hint="Update Password">
+    </oj-input-password>
+
+  </oj-form-layout>
+
+  <oj-button class="oj-sm-margin-3x-top" chroming="callToAction">
+    Save Preferences
+  </oj-button>
+</div>

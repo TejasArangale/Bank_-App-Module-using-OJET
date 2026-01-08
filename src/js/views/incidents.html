@@ -1,0 +1,105 @@
+<div id="div1">
+  <h4>Customer Information</h4>
+  <oj-form-layout max-columns="2" direction="row">
+
+    <oj-input-text label-hint="Full Name" value="John Doe"></oj-input-text>
+    <oj-input-text label-hint="Customer ID" value="CUST982134" readonly></oj-input-text>
+
+    <oj-input-text label-hint="Email" value="john.doe@example.com"></oj-input-text>
+    <oj-input-text label-hint="Phone Number" value="+91 98765 43210"></oj-input-text>
+
+    <oj-input-text label-hint="Date of Birth" value="12-08-1988"></oj-input-text>
+    <oj-input-text label-hint="PAN Number" value="ABCDE1234F" readonly></oj-input-text>
+
+  </oj-form-layout>
+
+  <h4>Account Information</h4>
+<oj-form-layout max-columns="2" direction="row">
+
+  <oj-input-text label-hint="Account Number" value="204589764321" readonly></oj-input-text>
+  <oj-input-text label-hint="Account Type" value="Savings"></oj-input-text>
+
+  <oj-input-text label-hint="Branch" value="Mumbai Central"></oj-input-text>
+  <oj-input-text label-hint="IFSC Code" value="HDFC0001234" readonly></oj-input-text>
+
+  <oj-input-text label-hint="Account Status" value="Active" readonly></oj-input-text>
+  <oj-input-text label-hint="Current Balance" value="₹ 1,24,500.75" readonly></oj-input-text>
+
+</oj-form-layout>
+
+
+  <h4>KYC Information</h4>
+<oj-form-layout max-columns="2" direction="row">
+
+  <oj-input-text label-hint="Aadhaar Number" required="true" placeholder="Enter 12-digit Aadhaar"></oj-input-text>
+
+  <oj-input-text label-hint="PAN Number" value="ABCDE1234F" readonly="true"></oj-input-text>
+
+  <oj-input-text label-hint="Occupation" placeholder="e.g., Software Engineer"></oj-input-text>
+
+  <oj-input-text label-hint="Annual Income" placeholder="e.g., ₹5,00,000"></oj-input-text>
+
+</oj-form-layout>
+
+
+ <h4>Card Details</h4>
+<oj-form-layout max-columns="2" direction="row">
+
+  <oj-input-text label-hint="Card Number">
+    <span slot="start" class="oj-ux-ico-credit-card"></span>
+  </oj-input-text>
+
+  <oj-input-text label-hint="Expiry Date" placeholder="MM/YY">
+    <span slot="end" class="oj-ux-ico-calendar"></span>
+  </oj-input-text>
+
+  <oj-input-text label-hint="Card Type" value="VISA"></oj-input-text>
+
+  <oj-input-text label-hint="Status" value="Active" readonly="true"></oj-input-text>
+
+</oj-form-layout>
+
+ <h4>Bank Branch Information</h4>
+<oj-form-layout max-columns="2" direction="row">
+
+  <oj-input-text label-hint="Branch Name" value="Mumbai Central Branch"></oj-input-text>
+
+  <oj-input-text label-hint="IFSC Code" value="HDFC0001234" readonly="true"></oj-input-text>
+
+  <oj-input-text label-hint="Branch Address" 
+                 help.instruction="Your home branch where the account is registered"
+                 value="MG Road, Mumbai, Maharashtra">
+  </oj-input-text>
+
+  <oj-input-text label-hint="Branch Phone" value="022-23456788"></oj-input-text>
+
+</oj-form-layout>
+
+
+  <h4>Security Preferences</h4>
+<oj-form-layout max-columns="2" direction="row">
+
+  <oj-select-single label-hint="2-Factor Authentication" value="enabled">
+    <oj-option value="enabled">Enabled</oj-option>
+    <oj-option value="disabled">Disabled</oj-option>
+  </oj-select-single>
+
+  <oj-input-text label-hint="Login PIN (masked)" value="****" readonly="true"></oj-input-text>
+
+  <oj-select-single label-hint="Default Login Method" value="otp">
+    <oj-option value="otp">OTP</oj-option>
+    <oj-option value="password">Password</oj-option>
+    <oj-option value="fingerprint">Fingerprint (Mobile Only)</oj-option>
+  </oj-select-single>
+
+  <oj-input-text label-hint="Last Password Change" value="02 Jan 2025" readonly="true"></oj-input-text>
+
+</oj-form-layout>
+
+  <oj-form-layout max-columns="2" direction="row">
+    <oj-input-text messages-custom="[[error]]" value="value text" label-hint="error"></oj-input-text>
+    <oj-input-text messages-custom="[[warning]]" value="value text" label-hint="warning"></oj-input-text>
+    <oj-input-text messages-custom="[[info]]" value="value text" label-hint="info"></oj-input-text>
+    <oj-input-text messages-custom="[[confirmation]]" value="value text" label-hint="confirmation"></oj-input-text>
+  </oj-form-layout>
+</div>

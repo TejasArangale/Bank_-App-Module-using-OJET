@@ -1,0 +1,44 @@
+<div id="gauge-container" class="dashboard-container">
+
+  <h1 class="oj-typography-heading-xl">Customer Financial Overview</h1>
+  <p class="oj-typography-body-md">A quick snapshot of your financial health.</p>
+
+  <div class="dashboard-grid">
+
+    <!-- Card 1 -->
+    <div class="dash-card">
+      <h3>Total Balance Utilization</h3>
+      <oj-c-meter-circle value="{{balanceUsage}}" max="100" size="lg" color="#0077CC"></oj-c-meter-circle>
+      <p>{{balanceUsage}}% of your available balance is in use.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="dash-card">
+      <h3>Monthly Spending</h3>
+      <oj-c-meter-circle value="{{monthlySpending}}" max="100" size="lg" color="#D63B25"></oj-c-meter-circle>
+      <p>You have spent {{monthlySpending}}% of your monthly budget.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="dash-card">
+      <h3>Credit Card Usage</h3>
+      <oj-c-meter-circle value="{{creditUsage}}" max="100" size="lg" color="#FF9900"></oj-c-meter-circle>
+      <p>{{creditUsage}}% of your credit limit used.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="dash-card">
+      <h3>Loan EMI Progress</h3>
+      <oj-c-meter-circle value="{{emiProgress}}" max="100" size="lg" color="#28A745"></oj-c-meter-circle>
+      <p>{{emiProgress}}% of the EMI cycle completed.</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="dash-card">
+      <h3>Savings Goal Completion</h3>
+      <oj-c-meter-circle value="{{savingsGoal}}" max="100" size="lg" color="#9C27B0"></oj-c-meter-circle>
+      <p>You have achieved {{savingsGoal}}% of your savings goal.</p>
+    </div>
+
+  </div>
+</div>
